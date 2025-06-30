@@ -62,6 +62,8 @@ public class PlatzVerkaufsController
         _view.getPlatzplan().addPlatzSelectionListener(
                 event -> reagiereAufNeuePlatzAuswahl(event
                         .getAusgewaehltePlaetze()));
+        //TODO 
+        
     }
 
     /**
@@ -70,6 +72,7 @@ public class PlatzVerkaufsController
     private void fuehreBarzahlungDurch()
     {
         verkaufePlaetze(_vorstellung);
+      //TODO
     }
 
     /**
@@ -112,6 +115,8 @@ public class PlatzVerkaufsController
             _view.getPreisLabel().setText(
                     "Gesamtpreis: 0 Eurocent");
         }
+      //TODO
+        
     }
 
     /**
@@ -208,4 +213,43 @@ public class PlatzVerkaufsController
         vorstellung.stornierePlaetze(plaetze);
         aktualisierePlatzplan();
     }
+    
+    public boolean istAbbrechenMoeglich()
+    {
+    	//TODO
+    	return true;
+    }
+    
+    public boolean istBestaetigenMoeglich()
+    {
+    	//TODO
+    	return true;
+    }
+    
+    public Geldbetrag berechneRueckgeld()
+    {
+    	//TODO
+    }
+    
+    public void barzahlungAbbrechen()
+    {
+    	//TODO
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
